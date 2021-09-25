@@ -8,8 +8,8 @@ def detect_color_image(file_name, thumb_size=40, MSE_cutoff=22):
     this file and returns a whether the image is colored or greyscale.
 
     :param file_name: image file name
-    :param thumb_size: size of the resized image
-    :param MSE_cutoff: THe minimum Mean Squared Error threshold
+    :param thumb_size: size of the resized image, default is 40 x 40
+    :param MSE_cutoff: THe minimum Mean Squared Error threshold, default is 22
     :return: A string predicting whether the image is colored or greyscale
     """
     pil_img = Image.open(file_name)
