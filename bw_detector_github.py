@@ -37,8 +37,3 @@ def detect_color_image(file_name, thumb_size=40, MSE_cutoff=22):
         return "black_white"
     else:
         return "not sure"
-
-
-for f in os.listdir('.'):
-    if f.endswith('.jpg') or f.endswith('.jpeg') or f.endswith('.png') or f.endswith('.tiff'):
-        print(f"{f}: {detect_color_image(f)}")
